@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1488CC;
+    background: -webkit-linear-gradient(to right, #2B32B2);
+    background: linear-gradient(to right, #2b32b2,#1488CC);
+    height: 100vh;
+}
+
+.appContainer{
+    height: 100%;
+}
+
+.appContainer h1{
+    padding: 0.5rem 0.2em 0.3em 9.5em;
+    background: #d8bfbf30;
+    color: white;
+    font-family: Zilla Slab;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+
+.appContainer > div{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 1em;
+    column-gap: 2em;
+    flex-wrap: wrap;
+    row-gap: 2em;
+}
+
+.cardContainer{
+    width: 300px;
+    height: auto;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+}
+
+.cardContainer h4{
+    padding:0.3em 0.8em;
+    margin-top: 0 !important;
+    font-family: 'Zilla Slab';
+    padding-top: 0 !important;
+    color: #8a8a8a;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: 0.1em;
+}
+
+.cardContainer h2{
+    padding:0.3em 0.4em;
+    font-family: 'Zilla Slab';
+    font-size: 2em;
+    padding-bottom: 0;
+}
+
+.cardContainer .Rounded{
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin:0;
+    padding-left:1.5rem;
+}
+
+.listContainer li{
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    column-gap: 0.5em;
+}
+
+.tareaEnTiempo{
+    color: #1b9ff8 !important;
+    font-weight: bold;
+}
+
+.tareaAtrasada{
+    color: #1b9ff8 !important;
+    font-weight: bold;
+}
+
+button{
+    align-self: flex-end;
+    margin-right:1em;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: #24aeff;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+#aryResult,#sansaResult,#jonResult{
+    text-align: center;
+    font-family: 'Zilla Slab';
+    font-style: italic;
+    font-size: 1.4em;
+    margin: 0.3em;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
